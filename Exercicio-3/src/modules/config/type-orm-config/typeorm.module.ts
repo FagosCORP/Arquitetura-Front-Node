@@ -12,4 +12,4 @@ import { TypeOrmModule } from "@nestjs/typeorm";
   ],
 })
 
-export class TypeOrmConfig { }
+export class TypeOrmConfigModule { }

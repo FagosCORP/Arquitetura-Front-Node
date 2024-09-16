@@ -20,9 +20,10 @@ export class ProjectsController {
     return this.projectsService.create(createProjectDto);
   }
   @Get()
-  findAll() {
-    return this.projectsService.findAll();
+  async findAll(@Query() filter?: FilterDto) {
+    return this.projectsService.findAllPaginated(filter)
   }
+
   @Get(":id")
   findOne(@Param("id") id: string) {
     return this.projectsService.findOne(+id);

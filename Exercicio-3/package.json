@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "@nestjs/cache-manager": "^2.2.2",
     "@nestjs/typeorm": "^10.0.2",
+    "cache-manager": "^5.7.6",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
     "sqlite3": "^5.1.7",
